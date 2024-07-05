@@ -1,0 +1,150 @@
+.container {
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.board {
+	width: 400px;
+	min-height: 400px;
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.square {
+	border: 1px solid black;
+	font-size: 35px;
+	text-align: center;
+	line-height: 10px;
+}
+
+.square:hover {
+	background: rgb(242, 171, 202);
+	background: radial-gradient(
+		circle,
+		rgba(242, 171, 202, 1) 0%,
+		rgba(157, 228, 246, 1) 100%
+	);
+}
+
+.score-board {
+	background-color: #f0f0f0;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	font-size: 1.2em;
+}
+span {
+	border-radius: 10px;
+}
+.players span {
+	background-color: #4caf50;
+	color: #fff;
+	padding: 10px;
+}
+
+.score span {
+	background-color: #2196f3;
+	color: #fff;
+	padding: 15px;
+}
+
+.players span:first-child {
+	background-color: #f44336;
+}
+
+.players span:last-child {
+	background-color: #3f51b5;
+}
+
+.score span:first-child {
+	background-color: #ff9800;
+}
+
+.score span:last-child {
+	background-color: #009688;
+}
+
+.players {
+	margin-top: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-self: center;
+}
+
+.playerInput {
+	width: 100%;
+	margin: 1rem;
+}
+.score {
+	font-weight: 500;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 1em;
+}
+
+.reset {
+	margin-bottom: 1em;
+}
+
+.button {
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	font-family: "Luckiest Guy";
+	font-size: 25px;
+	padding: 10px 20px 5px 20px;
+	text-align: center;
+	transition: all 0.3s ease;
+	user-select: none;
+	text-transform: uppercase;
+	margin-bottom: 0.7em;
+}
+
+.players-button {
+	background-color: #ffcc00;
+	box-shadow: 0 5px #b38f00;
+	color: #333;
+}
+
+.players-button:hover {
+	background-color: #15f178;
+	box-shadow: 0 3px #b38f00;
+	transform: translateY(2px);
+	color: white;
+}
+
+.reset-scores-button {
+	background-color: #ff0000;
+	box-shadow: 0 5px #b38f00;
+	color: #333;
+}
+.reset-scores-button:hover {
+	background-color: #15f178;
+	box-shadow: 0 3px #b38f00;
+	transform: translateY(2px);
+	color: white;
+}
+
+.game-button {
+	background-color: #24a0ec;
+	box-shadow: 0 5px #048a9c;
+	color: black;
+	font-size: 30px;
+	padding: 15px 30px 7px 30px;
+}
+.game-button:hover {
+	background-color: #ea37f6;
+	box-shadow: 0 3px #f581f1;
+	transform: translateY(2px);
+	color: white;
+}
