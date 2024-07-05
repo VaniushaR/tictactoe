@@ -26,6 +26,7 @@ const Board = () => {
 
 	const handleClick = (index: number) => {
 		//logic to update the square value
+		console.log("click in: ", index, "as: ", isXNext ? "X" : "O");
 		setSquares((prevSquares) => {
 			const newSquares = prevSquares.slice(); //return a shallow copy of the array to do not mutate the original array
 			if (newSquares[index] !== null || winner) return newSquares; //if the array index is not null, return the array, otherwise update the array
@@ -42,6 +43,7 @@ const Board = () => {
 	const resetGame = () => {
 		setSquares(Array(9).fill(null));
 		setWinner(null);
+		setIsXNext(true);
 	};
 
 	useEffect(() => {

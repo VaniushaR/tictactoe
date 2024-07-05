@@ -60,8 +60,8 @@ const ScoreBoard = ({ winner }: ScoreBoardProps) => {
 			) : null}
 
 			<div className="players">
-				<span> O : {player1}</span>
-				<span> X : {player2}</span>
+				<span> X : {player1}</span>
+				<span> O : {player2}</span>
 			</div>
 			<div className="score">
 				<span>{score1}</span>
